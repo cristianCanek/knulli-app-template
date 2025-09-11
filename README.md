@@ -25,6 +25,23 @@ sudo apt install ... -y
 
     << TODO: Complete this section. >>
 
+```bash
+cmake -B build -S .
+make -C build -j
+```
+
 ### Cross-compiling (in a x32_64 Debian setup)
+
+    << TODO: Complete this section. >>
+
+## Runing the app
+
+### Localy (for testing)
+
+```bash
+sudo build/bin/lvglsim -b sdl
+```
+
+### In a KNULLI device
 
     << TODO: Complete this section. >>
