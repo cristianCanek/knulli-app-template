@@ -375,7 +375,7 @@
      *  - LV_LOG_LEVEL_ERROR    Log only critical issues, when system may fail.
      *  - LV_LOG_LEVEL_USER     Log only custom log messages added by the user.
      *  - LV_LOG_LEVEL_NONE     Do not log anything. */
-    #define LV_LOG_LEVEL LV_LOG_LEVEL_WARN
+    #define LV_LOG_LEVEL LV_LOG_LEVEL_INFO
 
     /** - 1: Print log with 'printf';
      *  - 0: User needs to register a callback with `lv_log_register_print_cb()`. */
@@ -1250,7 +1250,7 @@
 #define LV_USE_TFT_ESPI         0
 
 /** Driver for evdev input devices */
-#define LV_USE_EVDEV    1
+#define LV_USE_EVDEV    0
 
 /** Driver for libinput input devices */
 #define LV_USE_LIBINPUT    0
@@ -1300,7 +1300,7 @@
 #endif
 
 /** Use OpenGL to open window on PC and handle mouse and keyboard */
-#define LV_USE_OPENGLES   0
+#define LV_USE_OPENGLES   1
 #if LV_USE_OPENGLES
     #define LV_USE_OPENGLES_DEBUG        1    /**< Enable or disable debug for opengles */
 #endif

@@ -30,7 +30,7 @@ cmake -B build -S .
 make -C build -j
 ```
 
-### Cross-compiling (in a x32_64 Debian setup)
+### Cross-compiling (in a Debian x32_64 setup)
 
     << TODO: Complete this section. >>
 

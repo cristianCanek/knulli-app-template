@@ -92,7 +92,7 @@ static lv_display_t *init_x11(void)
     lv_display_t *disp;
     LV_IMG_DECLARE(mouse_cursor_icon);
 
-    disp = lv_x11_window_create("LVGL simulator",
+    disp = lv_x11_window_create("Window (X11)",
            settings.window_width , settings.window_height);
 
     disp = lv_display_get_default();
