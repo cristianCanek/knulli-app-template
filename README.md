@@ -5,18 +5,22 @@ This repository is intended to be used as a hello world example when building ap
 
 ## Prerequisites
 
-Ensure you have installed the next packages before building the application:
-
-    << TODO: List the dependencies here. >>
-
-For convenience, use the next command(s):
+Ensure you have installed the next packages before building the application (for convenience, use the next command):
 
 ```bash
-sudo apt install ... -y
+sudo apt install git cmake gcc g++ python3.13-venv pkg-config libsdl2-dev libsdl2-image-dev libglfw3-dev libglew-dev -y
+```
+
+Clone the repository with its submodules:
+
+```bash
+git clone --recursive https://github.com/cristianCanek/lvgl-sdl-helloworld.git
 ```
 
 
-## Building the app
+## Building the application
+
+From the root path **within the lvgl-sdl-helloworld** repository, run these commands:
 
 ```bash
 cmake -B build -S .
@@ -24,10 +28,10 @@ make -C build -j
 ```
 
 
-## Runing the app
+## Running the application
 
 ```bash
-# Running the app using the SDL backend (default size, 640x480)
+# Running the application using the SDL backend (default size, 640x480)
 sudo ./build/bin/lvglsim -b SDL
 ```
 
@@ -40,6 +44,6 @@ sudo ./build/bin/lvglsim -B
 # Print LVGL version
 sudo ./build/bin/lvglsim -V
 
-# Running the app with custom width and height
+# Running the application with custom width and height
 sudo ./build/bin/lvglsim -b SDL -W 300 -H 200
 ```
